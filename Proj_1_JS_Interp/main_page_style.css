@@ -1,34 +1,37 @@
 head {
     text-decoration-color: darkturquoise;
 }
-.page-wrapper {
+div.page-wrapper {
   display: flex;
   justify-content: space-between;
 }
-.left-panel-wrapper {
-  /*width: 1500px;*/
-  height: 530px;
-  background-color: lavenderblush;
-}
-.right-panel-wrapper {
-  /*width: 1500px;*/
+div.left-panel-wrapper {
+  width: 620px;
   height: 530px;
   background-color: lavenderblush;
 }
 div.center-panel-wrapper {
   /*padding: 0 30px;*/
-  width: 155px;
+  width: 130px;
   /*height: 10em;*/
   position: relative; 
   /*padding: 0 30px;*/
   /*padding: 0 30px;*/
 }
 button {
-  width: 120px;
+  width: 110px;
   background-color: yellow;
     border-color: darkorange;
   margin: 0;
    position: absolute;               /* 2 */
    top: 50%;                         /* 3 */
    transform: translate(0, -50%);
+    right: 10px;
 }
+div.right-panel-wrapper {
+  width: 620px;
+  height: 530px;
+  background-color: lavenderblush;
+}
+    
+
