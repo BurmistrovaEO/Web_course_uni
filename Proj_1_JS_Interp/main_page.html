@@ -5,26 +5,27 @@
         <link rel="stylesheet" href="main_page_style.css">
         <title>JS Interpreter</title>
     </head>
-    <body bgcolor=#112232 scroll=no>
-        <h1 text=#E0FFFF>JavaScript Interpreter</h1>
-        <div class="page-wrapper">
-            <div class="left-panel-wrapper">
-                <div class="left-panel">
-                    <input>
-                        <script>
-                    </script>
-                </div>
+    <body scroll=no >
+        <div class="herescode">
+           <textarea id="htmlbase" placeholder="htmlbase" oninput="runEditor()">
+           </textarea>
+            <textarea id="editor" placeholder="JavaScript Code" oninput="runEditor()">
+            </textarea>
             </div>
-            <div class="center-panel-wrapper">
-                   <button>
-                       RUN
-                   </button> 
-            </div>
-            <div class="right-panel-wrapper">
-                <div class="right-panel">
-                    some content some content some content some content some content some content some content some content some content
-                </div>
-            </div>
-        </div>
+            <div class="heresresult">
+                <iframe id="result"></iframe>
+            </div>                    
+            <script type='text/javascript'>
+                
+            function runEditor()
+            {
+                var htmlccode = document.getElementById("htmlbase").value;
+                var ccode = "<scri"+"pt>"+document.getElementById("editor").value+"</scri"+"pt>";
+                var frame = document.getElementById("result").contentWindow.document;
+                frame.open();
+                frame.write(htmlccode + ccode);
+                frame.close();
+            }
+            </script>
     </body>
 </html>

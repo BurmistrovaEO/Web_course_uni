@@ -1,37 +1,31 @@
-head {
-    text-decoration-color: darkturquoise;
+* {
+    margin:0px; 
+    padding:0px;
+    box-sizing: border-box;
 }
-div.page-wrapper {
-  display: flex;
-  justify-content: space-between;
+body{
+    height:100vh;
+    display: flex;
 }
-div.left-panel-wrapper {
-  width: 620px;
-  height: 530px;
-  background-color: lavenderblush;
+.herescode {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-right: 1px solid #555;
 }
-div.center-panel-wrapper {
-  /*padding: 0 30px;*/
-  width: 130px;
-  /*height: 10em;*/
-  position: relative; 
-  /*padding: 0 30px;*/
-  /*padding: 0 30px;*/
+.herescode textarea {
+    resize: none;
+    outline:none;
+    height:50%;
+    width: 100%;
+    font-size: 18px;
+    padding:10px;
 }
-button {
-  width: 110px;
-  background-color: yellow;
-    border-color: darkorange;
-  margin: 0;
-   position: absolute;               /* 2 */
-   top: 50%;                         /* 3 */
-   transform: translate(0, -50%);
-    right: 10px;
+.heresresult {
+  width: 50%;
 }
-div.right-panel-wrapper {
-  width: 620px;
-  height: 530px;
-  background-color: lavenderblush;
+.heresresult iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
-    
-
